@@ -1,0 +1,63 @@
+[
+  {
+    "rating": 0,
+    "title": "Fail",
+    "description": "Just give up."
+  },
+  {
+    "rating": 1,
+    "title": "Well-Met",
+    "description": "In good circumstances, keep your life together."
+  },
+  {
+    "rating": 2,
+    "title": "Function",
+    "description": "Perform basic tasks."
+  },
+  {
+    "rating": 3,
+    "title": "Focus",
+    "description": "Pay attention."
+  },
+  {
+    "rating": 4,
+    "title": "Expertise",
+    "description": "Do everyday work that falls within your competencies."
+  },
+  {
+    "rating": 5,
+    "title": "Steel",
+    "description": "Do unpleasant or unfamiliar work."
+  },
+  {
+    "rating": 6,
+    "title": "Organization",
+    "description": "Bring diligence, attention and organization to bear."
+  },
+  {
+    "rating": 7,
+    "title": "Flow",
+    "description": "Be your personal best."
+  },
+  {
+    "rating": 4,
+    "title": "Greater Fail",
+    "description": "Declare something impossible for you."
+  },
+  {
+    "rating": 5,
+    "title": "Greater Well-Met",
+    "description": "Keep your life together, even in difficult situations."
+  },
+  {
+    "rating": 6,
+    "title": "Greater Function",
+    "description": "Perform basic tasks with flair and verve."
+  },
+  {
+    "rating": 7,
+    "title": "Greater Focus",
+    "description": "Deeply focused attention, or paying attention in unfavorable scenarios."
+  }
+]
+

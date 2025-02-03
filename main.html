@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nobilis Character Builder</title>
+<link rel="stylesheet" href="styles.css">
+ <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body onload="pointsRemaining()">
+
+<div class="tab">
+    <button class="tablinks" onclick="openAttribute(event, 'Ability')" id="defaultOpen">Ability</button>
+    <button class="tablinks" onclick="openAttribute(event, 'Aspect')">Aspect</button>
+    <button class="tablinks" onclick="openAttribute(event, 'Domain')">Domain</button>
+    <button class="tablinks" onclick="openAttribute(event, 'Persona')">Persona</button>
+    <button class="tablinks" onclick="openAttribute(event, 'Flore')">Flore</button>
+    <button class="tablinks" onclick="openAttribute(event, 'Other')">Geasa, Bonds and Gifts</button>
+    <button id="charPointsRemaining", class="tablinks">Character Points Remaining: 25</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Ability" class="tabcontent">
+    <h3>Ability</h3>
+    <p>Ability covers your capacity to function as a person and do person-type activities. It's more important for Powers than Strategists because they're actually good at it, and they don't have the ability to do Stunts. It is bought for 1 CP per level.</p>
+
+    <label for="abilityRating">Rating:</label>
+    <input type="number" id="abilityRating" name="abilityRating" min="0" max="7", value="0" onchange="pointsRemaining()">
+
+    <p>Without Cost, you can use...</p>
+
+    <p id="abilitytitle", class="powerhead"></p>
+    <p id="abilitydesc", class="powerdesc"></p>
+    <p id="abilityex", class="powerex"></p>
+  </div>
+  
+  <div id="Aspect" class="tabcontent">
+    <h3>Aspect</h3>
+    <p>Aspect is your ability to push beyond mortal capacities - to be the best of what a human being could be, if a human being had no limits. It is bought for 2 CP per level.</p>
+
+    <label for="aspectRating">Rating:</label>
+    <input type="number" id="aspectRating" name="aspectRating" min="0" max="7", value="0" onchange="pointsRemaining()">
+
+    <p>Without Cost, you can use...</p>
+
+    <p id="aspecttitle", class="powerhead"></p>
+    <p id="aspectdesc", class="powerdesc"></p>
+    <p id="aspectex", class="powerex"></p>
+
+    <p id="aspectgtitle", class="powerhead"></p>
+    <p id="aspectgdesc", class="powerdesc"></p>
+    <p id="aspectgex", class="powerex"></p>
+  </div>
+  
+  <div id="Domain" class="tabcontent">
+    <h3>Domain</h3>
+    <p>Domain is your connection to your Estate - your ability to hear its voice, protect it and command it. It is bought for 2 CP per level.</p>
+
+    <label for="domainRating">Rating:</label>
+    <input type="number" id="domainRating" name="domainRating" min="0" max="7", value="0" onchange="pointsRemaining()"> 
+
+    <p>Without Cost, you can use...</p>
+
+    <p id="domaintitle", class="powerhead"></p>
+    <p id="domaindesc"></p>
+    <p id="domainex", class="powerex"></p>
+  </div>
+
+  <div id="Persona" class="tabcontent">
+    <h3>Persona</h3>
+    <p>Persona is your power to embody your Estate and shape its story. It is bought for 2 CP per level.</p>
+
+    <label for="personaRating">Rating:</label>
+    <input type="number" id="personaRating" name="personaRating" min="0" max="7", value="0" onchange="pointsRemaining()">
+
+    <p>Without Cost, you can use...</p>
+
+    <p id="personatitle"></p>
+    <p id="personadesc"></p>
+    <p id="personaex"></p>
+  </div>
+
+  <div id="Flore" class="tabcontent">
+    <h3>Flore</h3>
+    <p>Flore is your panoply or regalia, the ability to draw power from the things that you love most. It is bought for 2 CP per level.</p>
+
+    <label for="floreRating">Rating:</label>
+    <input type="number" id="floreRating" name="floreRating" min="0" max="7", value="0" onchange="pointsRemaining()">
+
+    <p>Without Cost, you can use...</p>
+
+    <p id="floretitle"></p>
+    <p id="floredesc"></p>
+    <p id="floreex"></p>
+  </div>
+
+  <div id="Other" class="tabcontent">
+    <h3>Geasa, Bonds, and Gifts</h3>
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html> 

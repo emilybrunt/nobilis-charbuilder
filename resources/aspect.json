@@ -1,0 +1,74 @@
+[
+  {
+    "rating": 0,
+    "title": "Cosmopolitan",
+    "description": "Speak any language that someone in the world speaks.",
+    "example": "Speak French, ASL, or the Language of Heaven."
+  },
+  {
+    "rating": 1,
+    "title": "Dauntless",
+    "description": "Miraculously win against any mundane opposition that defeated you previously in the same scene.",
+    "example": "You fall behind in a race, take a minute to rethink your strategy, and then pull ahead."
+  },
+  {
+    "rating": 2,
+    "title": "Untiring",
+    "description": "You don/'t really get tired and heal remarkably quickly, healing 3 Wear per chapter.",
+    "example": "Shake off a sprained ankle, be unfazed by a long day at work."
+  },
+  {
+    "rating": 3,
+    "title": "Grace",
+    "description": "You have high end physical conditioning and are lucid, calm and flexible even in stressful or unpleasant situations. You can be neatly groomed even in impossible situations.",
+    "example": "Looking clean and fresh during an artillery bombardment. Pretending you have 20 years of athletics training, instead of having done a single jumping jack."
+  },
+  {
+    "rating": 4,
+    "title": "Flair",
+    "description": "Add 4 your Ability instead of taking Wear.",
+    "example": ""
+  },
+  {
+    "rating": 5,
+    "title": "Perfection",
+    "description": "Perfect timing and your mundane actions compete with miracles.",
+    "example": "Stroll casually across a busy highway. Parry a miraculous death-ray with a baseball bat."
+  },
+  {
+    "rating": 6,
+    "title": "Determination",
+    "description": "Have the strength of a bear, mental speed of a computer, and the equivalent for every other capacity.",
+    "example": "Throw a car, track someone by scent, run on the heads of a crowd, do complex calculus in your head."
+  },
+  {
+    "rating": 7,
+    "title": "Conviction",
+    "description": "Low-fantasy control over your body and mind.",
+    "example": "Raise your body temp enough to start a fire, sing two lines of a song at once, deliberately forget something, or exert your full strength through a fingertip."
+  },
+  {
+    "rating": 4,
+    "title": "Greater Cosmopolitan",
+    "description": "Fit in anywhere.",
+    "example": "Be unremarkable in Paris, Shanghai or Octopus World."
+  },
+  {
+    "rating": 5,
+    "title": "Greater Dauntless",
+    "description": "Ignore fear, pain and potential for future discomfort.",
+    "example": "Stick your hand into molten lava, ignore the fact that  your legs are broken, resist the aura of fear around a haunted house."
+  },
+  {
+    "rating": 6,
+    "title": "Greater Untiring",
+    "description": "Go without basic needs indefinitely.",
+    "example": "Go without food or sleep for a month, run at a steady pace for a year, survive on sheer spite as you fly through the vacuum of space."
+  },
+  {
+    "rating": 7,
+    "title": "Greater Grace",
+    "description": "Become exceptionally graceful and fluid in body and mind, able to jump 40 feet or do wirework style moves.",
+    "example": "Jump out of a plane without a parachute, run on the crest of waves, decide not to worry about Lord Entropy."
+  }
+]
