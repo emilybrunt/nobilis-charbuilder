@@ -17,15 +17,15 @@
     <button class="tablinks" onclick="openAttribute(event, 'Domain')">Domain</button>
     <button class="tablinks" onclick="openAttribute(event, 'Persona')">Persona</button>
     <button class="tablinks" onclick="openAttribute(event, 'Flore')">Flore</button>
-    <button class="tablinks" onclick="openAttribute(event, 'Other')">Geasa, Bonds and Gifts</button>
+    <button class="tablinks" onclick="openAttribute(event, 'Other')">Geasa and Bonds</button>
     <button id="charPointsRemaining", class="tablinks">Character Points Remaining: 25</button>
   </div>
   
   <!-- Tab content -->
   <div id="Ability" class="tabcontent">
     <h3>Ability</h3>
-    <p>Ability covers your capacity to function as a person and do person-type activities. It's more important for Powers than Strategists because they're actually good at it, and they don't have the ability to do Stunts. It is bought for 1 CP per level.</p>
-
+    <p>Ability covers your capacity to do everything that isn't a miracle. It's more important for Powers than Strategists because they're actually good at it, and they don't have the ability to do Stunts. It is bought for 1 CP per level.</p>
+    <p>By Aspect 3, level 1-3 Ability actions are always free, regardless of your Ability rating.</p>
     <label for="abilityRating">Rating:</label>
     <input type="number" id="abilityRating" name="abilityRating" min="0" max="7", value="0" onchange="pointsRemaining()">
 
@@ -34,10 +34,15 @@
     <p id="abilitytitle", class="powerhead"></p>
     <p id="abilitydesc", class="powerdesc"></p>
     <p id="abilityex", class="powerex"></p>
+
+    <p id="abilitygtitle", class="powerhead"></p>
+    <p id="abilitygdesc", class="powerdesc"></p>
+    <p id="abilitygex", class="powerex"></p>
   </div>
   
   <div id="Aspect" class="tabcontent">
     <h3>Aspect</h3>
+
     <p>Aspect is your ability to push beyond mortal capacities - to be the best of what a human being could be, if a human being had no limits. It is bought for 2 CP per level.</p>
 
     <label for="aspectRating">Rating:</label>
@@ -66,6 +71,10 @@
     <p id="domaintitle", class="powerhead"></p>
     <p id="domaindesc"></p>
     <p id="domainex", class="powerex"></p>
+
+    <p id="domaingtitle", class="powerhead"></p>
+    <p id="domaingdesc", class="powerdesc"></p>
+    <p id="domaingex", class="powerex"></p>
   </div>
 
   <div id="Persona" class="tabcontent">
@@ -77,9 +86,13 @@
 
     <p>Without Cost, you can use...</p>
 
-    <p id="personatitle"></p>
+    <p id="personatitle", class="powerhead"></p>
     <p id="personadesc"></p>
-    <p id="personaex"></p>
+    <p id="personaex", class="powerex"></p>
+
+    <p id="personagtitle", class="powerhead"></p>
+    <p id="personagdesc", class="powerdesc"></p>
+    <p id="personagex", class="powerex"></p>
   </div>
 
   <div id="Flore" class="tabcontent">
@@ -91,16 +104,80 @@
 
     <p>Without Cost, you can use...</p>
 
-    <p id="floretitle"></p>
+    <p id="floretitle", class="powerhead"></p>
     <p id="floredesc"></p>
-    <p id="floreex"></p>
+    <p id="floreex", class="powerex"></p>
+
+    <p id="floregtitle", class="powerhead"></p>
+    <p id="floregdesc", class="powerdesc"></p>
+    <p id="floregex", class="powerex"></p>
   </div>
 
   <div id="Other" class="tabcontent">
-    <h3>Geasa, Bonds, and Gifts</h3>
+    <h3>Geasa and Bonds</h3>
+    <p>A Bond or a Geasa is something that is <b>true</b> about a character.<br>
+      If they were a character in a fable or a tropey TV show, it'd be the sort of thing people jumped to when describing them.</p>
+
+    <p><b>Geasa</b> are much like Nostos's Aspects, they are truths that insist on their own validity, miraculously reshaping the world to remain true. An individual invocation of their power can be beaten with miracles or by taking Cost, but taking a Geas out of commission on a long-term basis is hard. They cost 1 CP each.
+    </p>
+
+    <details>
+
+      <summary>Example Geasa</summary>
+      <ul>
+      <li>My targets must rakishly confess once I expose them.</li>
+      <li>I must be immune to the censure of medical ethics boards.</li>
+      <li>My theme music starts playing in times of extreme drama.</li>
+      <li>Everyone in the world knows my name.</li>
+      <li>I must grant three days hospitality to anyone who asks.</li>
+      <li>I will die at 9:45 AM on June 3rd 2031.</li>
+      <li>I can’t break my word.</li>
+      <li>When liberty is harmed, so am I.</li>
+      <li>I own a house everywhere I visit.</li>
+      <li>I’m the best dancer in the world.</li>
+      <li>My eyes give my inhuman nature away.</li>
+      <li>I change shapes when wet.</li>
+      <li>My coming is heralded by a heavenly choir.</li>
+      <li>I can only be wounded by someone pure of heart.</li>
+      <li>I can’t be seen when standing in the shadows.</li>
+      <li>I’m stronger than everyone that’s faster than me, and faster than everyone that’s stronger than me.</li>
+      </ul>
+  
+    </details>
+
+    <br>
+
+    <p><b>Bonds</b> are laws of your nature that you consciously enact, also costing 1 CP. They come with a "Truth" - a statement about you, and a Technique. Bond Techniques are typically either magical or cinematic in nature.</p> 
+
+    <p>Take the Bond, "I cook with my feelings" with the technique "Emotional Cooking". Normally, if you said to me, "I want to bake a cake with my own distilled joy", I would look at you, confused, and be like... "Metaphorically?"</p>
+    <p>With the Bond, I'd say, "Sure, sounds like an Expertise action."</p>
+
+    <p>Or take the Bond, "I can't be caught". In a conflict where someone is trying to catch you, you can invoke both that truth for +2 to your effective attribute level and 3 Edge. Suddenly, what would have been a "Function" action takes at least Flow for an NPC to compete with, as you avoid them with casual, cinematic ease. Just remember that Bond techniques are mundane, they are awe-inspiring against mortals, but don't compete well with miracles!</p>
+
+    <p>Almost all Powers have at least one Bond - their "Tragic Flaw" - the archetypical example being Natalia's Frozen Heart. They are negative - a flaw in the Power's perfection - but even negative Bonds and Geasa are useful. They contribute to cost recovery, and even negative Bonds come with a useful technique, like how Natalia's Frozen Heart lets her endure any amount of cold and resist corruption.</p>
+
+    <details>
+      <summary>Example Bonds</summary>
+        <ul>
+          <li>I can’t handle running water or sunlight. Technique: Vampire Powers.</li>
+          <li>No one drives my car but me. Technique: Ace Driver.</li>
+          <li>My art is a living thing. Technique: Chalk Magic.</li>
+          <li>Not rain, nor snow, nor gloom of night shall stay me from my appointed rounds. Technique: Postal Worker.</li>
+          <li>I can’t be caught. Technique: Escapology.</li>
+          <li>I serve the Song of Heaven. Technique: Holiness.</li>
+          <li>I’m heir to the Yatskaya Temple. Technique: Cat Speaker.</li>
+          <li>I have large, feathery wings. Technique: Flight.</li>
+          <li>My brother is a pain in the ass, but I love him. Technique: Bailing People Out.</li>
+          <li>I won’t ever get over my wife’s death. Technique: Speak to the Dead.</li>
+        </ul>
+      </details>
+
+  <br>
+  <br>
+  <br>
   </div>
 
   <script type="text/javascript" src="main.js"></script>
 
 </body>
-</html> 
+</html>  
